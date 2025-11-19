@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background: url("Untitled2_20250402212220.png") no-repeat center center;
+      background-size: cover;    /* Makes image fill entire page */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .text-box {
+      background: rgba(0, 0, 0, 0.5);  /* transparent black */
+      padding: 20px 30px;
+      border-radius: 10px;
+      color: white;
+      font-size: 22px;
+    }
+  </style>
+
+  <script>
+    const links = [
+      "https://s.shopee.ph/BM63YN7E3",
+      "https://s.shopee.ph/3fvyDxRvIA",
+      "https://s.shopee.ph/5fh2bblJER"
+    ];
+
+    // Redirect after 2 seconds
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }, 2000);
+  </script>
+</head>
+
+<body>
+
+</body>
+</html>
