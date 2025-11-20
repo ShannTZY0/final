@@ -7,8 +7,8 @@
   <!-- Facebook Preview -->
   <meta property="og:title" content="Shop Now!" />
   <meta property="og:description" content="Click to check Shopee products!" />
-  <meta property="og:image" content="https://YOUR-WEBSITE.com/front-image.png" />
-  <meta property="og:url" content="https://YOUR-WEBSITE.com" />
+  <meta property="og:image" content="https://shanntzy0.github.io/final/image.jpg" />
+  <meta property="og:url" content="https://shanntzy0.github.io/final/" />
   <meta property="og:type" content="website" />
 
   <style>
@@ -19,8 +19,14 @@
       justify-content: center;
       align-items: center;
       background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 22px;
     }
-    img { width: 90%; max-width: 500px; }
+    img {
+      max-width: 90%;
+      border-radius: 10px;
+    }
   </style>
 
   <script>
@@ -29,11 +35,22 @@
       "https://s.shopee.ph/3fvyDxRvIA",
       "https://s.shopee.ph/5fh2bblJER"
     ];
+
+    // Redirect after 2 seconds
     setTimeout(() => {
-      window.location.href = links[Math.floor(Math.random() * links.length)];
-    }, 20);
+      const randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }, 200);
   </script>
 </head>
+
+<body>
+  <div>
+    <img src="image.jpg" alt="Preview Image">
+    <p>Redirecting to Shopee…</p>
+  </div>
+</body>
+</html>
 
 <body>
   <img src="front-image.png">
