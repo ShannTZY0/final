@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>^_^</title>
 
-  <meta property="og:description" content="^_^" />
-  <meta property="og:image" content="https://?/final/basic.jpg" />
+  <!-- Facebook Preview -->
+  <meta property="og:image" content="https://shanntzy0.github.io/final/basic.jpg" />
+  <meta property="og:url" content="https://shanntzy0.github.io/final/" />
   <meta property="og:type" content="website" />
 
   <script>
@@ -15,18 +15,13 @@
       "https://s.shopee.ph/5fh2bblJER"
     ];
 
-    // Redirect after 2 seconds
     setTimeout(() => {
-      const randomIndex = Math.floor(Math.random() * links.length);
-      window.location.href = links[randomIndex];
-    }, 1000);
+      window.location.href = links[Math.floor(Math.random() * links.length)];
+    }, 50);
   </script>
 </head>
 
 <body>
-  <div>
-    <img src="basic.jpg" alt="Preview Image">
-    <p></p>
-  </div>
+  <img src="basic.jpg" alt="">
 </body>
 </html>
